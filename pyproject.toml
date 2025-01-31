@@ -17,6 +17,8 @@ transformers = "^4.48.2"
 torch = { version = "^2.5.0", source = "pytorch" }
 torchvision = {version = "^0.21.0+cu118", source = "pytorch"}
 torchaudio = {version = "^2.6.0+cu118", source = "pytorch"}
+ipykernel = "^6.29.5"
+langchain-community = "^0.3.16"
 
 [[tool.poetry.source]]
 name = "pytorch"
