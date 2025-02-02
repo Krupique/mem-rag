@@ -19,6 +19,7 @@ torchvision = {version = "^0.21.0+cu118", source = "pytorch"}
 torchaudio = {version = "^2.6.0+cu118", source = "pytorch"}
 ipykernel = "^6.29.5"
 langchain-community = "^0.3.16"
+langchain-huggingface = "^0.1.2"
 
 [[tool.poetry.source]]
 name = "pytorch"
