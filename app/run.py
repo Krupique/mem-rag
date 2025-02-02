@@ -1,4 +1,5 @@
 import os
+import argparse
 import pypdf
 import chromadb
 import urllib3
@@ -98,11 +99,17 @@ class ModelQWEN():
 if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "True"
     os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+    
+    parser = argparse.ArgumentParser(description="Set environment variables using argparse.")
+
+    parser.add_argument("--question", type=str, default="True", help="How are you?")
+    args = parser.parse_args()
+
 
     model = ModelQWEN()
     model.run()
 
-    response = model.generate_answer('Has the COVID-19 pandemic accelerated the pace of digital development around the world?')
+    response = model.generate_answer(args.question)
 
     print(response)
     
