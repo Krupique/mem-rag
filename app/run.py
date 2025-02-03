@@ -19,7 +19,7 @@ class ModelQWEN():
         pass
 
     def _load_data(self):
-        loader = PyPDFLoader('data/ArtigoDSA1.pdf')
+        loader = PyPDFLoader('data/article.pdf')
         # Load the file PDF
         pages = loader.load()
         # Create the chunk text separator
